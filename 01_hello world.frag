@@ -20,13 +20,16 @@ void main() {
 
 # This C-flavored language has built in variables (like gl_FragColor), functions and types（like vec4）.
 
-# The vec4 type we can infer that the four arguments respond to the RED, GREEN, BLUE and ALPHA channels. And these values are normalized, which means they go from 0.0 to 1.0.
+# The vec4 type we can infer that the four arguments respond to the RED, GREEN, BLUE and ALPHA channels. And these values are normalized, which means 
+they go from 0.0 to 1.0.
 
 # 条件编译：we insert the line 2 if GL_ES is defined, which mostly happens when the code is compiled on mobile devices and browsers.
 
-# Float types are vital in shaders, so the level of precision is crucial.Lower precision means faster rendering, but at the cost of quality（like precision mediump float;）.
+# Float types are vital in shaders, so the level of precision is crucial.Lower precision means faster rendering, but at the cost of quality（like precision 
+mediump float;）.
 
-# The most important is that GLSL specs don’t guarantee that variables will be automatically casted. You should get used to putting the point (.) in your floats. 
+# The most important is that GLSL specs don’t guarantee that variables will be automatically casted. You should get used to putting the point (.) 
+in your floats. 
 
 ```c
 void main() {
