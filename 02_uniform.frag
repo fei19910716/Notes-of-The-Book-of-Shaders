@@ -1,6 +1,7 @@
 # Uniforms
 
-# Although each parallel thread of GPU is blind to the others, we need to be able to send some inputs from the CPU to all the threads. Because of the architecture of the graphics card those inputs are going to be equal (uniform) to all the threads and necessarily set as read only.
+# Although each parallel thread of GPU is blind to the others, we need to be able to send some inputs from the CPU to all the threads. Because of the 
+architecture of the graphics card those inputs are going to be equal (uniform) to all the threads and necessarily set as read only.
 
 # These inputs are called uniform and come in most of the supported types: float, vec2, vec3, vec4, mat2, mat3, mat4, sampler2D and samplerCube.
 
@@ -30,7 +31,8 @@ void main() {
 
 # gl_FragCoord
 
-# In the same way GLSL gives us a default output, vec4 gl_FragColor, it also gives us a default input, vec4 gl_FragCoord, which holds the screen coordinates of the pixel or screen fragment that the active thread is working on. 
+# In the same way GLSL gives us a default output, vec4 gl_FragColor, it also gives us a default input, vec4 gl_FragCoord, which holds the screen 
+coordinates of the pixel or screen fragment that the active thread is working on. 
 
 try to figure out the following shader effect?
 ```c
